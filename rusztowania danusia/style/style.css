@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* style.css*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "DM Sans", sans-serif;
+}
+  
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+}
+
+.navbar-buttons button {
+  background: none;
+  color: #251117;
+  border: none;
+  margin-right: 20px;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all .375s;
+}
+
+.navbar-buttons button:not(:last-child) {
+  padding: 30px 20px;
+}
+
+.navbar-buttons .active {
+  color: #55c593;
+  border-bottom: 4px solid #55c593;
+}
+
+.navbar-buttons button:not(:last-child):hover {
+  color: #55c593;
+  border-bottom: 4px solid #55c593;
+}
+
+.navbar-buttons button:last-child {
+  background-color: #f7f7f7;
+  padding: 12.5px 25px;
+  border-radius: 5px;
+  font-size: 17.5px;
+}
+
+.navbar-buttons button:last-child:hover {
+  background-color: #55c593;
+  color: #ffffff;
+}
+
+/* Phone navbar */
+
+.device {
+  display: none;
+}
+
+.container2 {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  right: 0px;
+  top: 0px;
+  background: #191919;
+  opacity: 0;
+  z-index: -1;
+  visibility: hidden;
+  transition: all .375s;
+}
+
+.container2.is-open {
+  opacity: 1;
+  z-index: 100;
+  visibility: visible;
+}
+
+.open-nav {
+  position: relative;
+  float: right;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+}
+
+.close-nav-box {
+  position: relative;
+  width: 100%;
+  height: 5%;
+  margin-bottom: 20px;
+}
+
+.close-nav {
+  position: relative;
+  float: right;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+}
+
+.main-nav {
+  width: 100%;
+}
+
+.main-nav button {
+  display: flex;
+  margin: auto;
+  background-color: #f7f7f7;
+  padding: 8px 62px;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.main-nav li {
+  border-top: 1px solid rgba(255, 255, 255, .03);
+}
+
+.main-nav li:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, .03);
+}
+
+/* Skewing effect on menu links */
+
+.main-nav ul,
+.main-nav li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 160px;
+  width: 100%;
+  list-style: none outside;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.main-nav ul {
+  margin-bottom: 20px;
+}
+
+.main-nav a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #A6A6A6;
+}
+
+.main-nav a:hover {
+  color: #ffffff;
+}
+
+.contact-nav {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.phone-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.phone-nav a {
+  margin-left: 5px;
+}
+
+.mail-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.mail-nav a {
+  margin-left: 5px;
+}
+
+.media-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.media-nav a {
+  padding: 7.5px;
+}
+
+/* MENU Text part */
+
+@media only screen and (max-width: 600px) {
+  .device {
+    display: block;
+  }
+
+  .navbar{
+    display: none;
+  }
+
+  .footer-about, .footer-services, .footer-contact, .footer-follow {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+}
+
+.footer-main {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999999;
+  font-size: 16px;
+}
+
+.footer-about-1 {
+  padding-right: 2.5px;
+}
+
+.footer-about-2 {
+  padding-left: 2.5px;
+  font-weight: 600;
+}
+
+.footer-autor {
+  padding: 5px;
+}
+
+.footer-autor a {
+  color: #55c593;
+  font-weight: 550;
+  font-size: 22.5px;
+  text-decoration: none;
+}
+
+.footer-autor a:hover {
+  border-bottom: 1px solid #55c593;
+}
+
+.footer-icon a {
+  font-size: 17.5px;
+  padding: 2.5px;
+  color: #65666c;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-icon a:hover {
+  color: #55c593;
+}
